@@ -1,3 +1,14 @@
 <p>
-  my-component works!
+  {{myName}} works!
 </p>
+
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Name</th>
+  </tr>
+  <tr *ngFor="let person of personArray">
+    <td>{{person.id}}</td>
+    <td>{{person.name}}</td> 
+  </tr>
+</table>

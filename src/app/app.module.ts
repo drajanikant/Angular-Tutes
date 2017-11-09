@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MyComponentComponent } from './my-component/my-component.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MembersComponent } from './members/members.component';
         component: MyComponentComponent,
         pathMatch: 'full'
       }
-      ])
+      ]),
+      FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

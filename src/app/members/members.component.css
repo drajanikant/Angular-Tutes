@@ -1,0 +1,49 @@
+.main{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #9897a0;
+    text-align: center;
+    border-bottom: 0px;
+}
+.ItemTitle{
+    padding: 20px 0px;
+    color: #ffffff;
+    background: #958de0;
+    margin-top: 0px;
+}
+
+.ItemsForm{
+    /* height: 30px; */
+    margin-bottom: 10px;
+
+}
+.ItemInput{
+    height: 30px;
+    width: 80%;
+    font-size: 24px;
+}
+
+.ItemsForm button{
+    height: 40px;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;
+   
+    border-bottom: 2px solid #9897a0;
+}
+li{
+    padding: 10px 0px;
+    color: rgb(0, 0, 0);
+    background-color: #d8cece;
+    margin-bottom: 5px;
+    margin-left: -40px;
+}
+li span{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}

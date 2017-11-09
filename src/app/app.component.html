@@ -4,6 +4,9 @@
     Welcome to {{title}}!
   </h1>
 </div>
+<p>{{userName}}</p>
+<p *ngIf=" userName == 'RJ' ">{{userName}}</p>
+
 <a routerLink="/">Home</a> | <a routerLink="/members">Member</a> | <a routerLink="/product">Product</a>
 <hr>
 
@@ -11,11 +14,3 @@
 
 
 </router-outlet>
-<!-- <app-members>
-
-</app-members>
-
-<br>
-<app-product>
-
-</app-product> -->

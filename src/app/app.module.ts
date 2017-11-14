@@ -7,13 +7,17 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SortPipe } from './sort.pipe';
+import { SortDemoComponent } from './sort-demo/sort-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
     ProductComponent,
-    MembersComponent
+    MembersComponent,
+    SortPipe,
+    SortDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       {
         path: 'product',
         component: ProductComponent
+      },
+      {
+        path: 'pipe',
+        component: SortDemoComponent
       },
       {
         path:'', // for the default component route

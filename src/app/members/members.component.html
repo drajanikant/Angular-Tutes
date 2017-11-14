@@ -3,13 +3,13 @@
     Member List
   </h1>
   <div class="ItemsForm">
-    <input type="text" [(ngModel)] = "newMember" placeholder="Add Member" class="ItemInput" />
-    <button (click) = "addMember()">Add</button>
+    <input type="text" [(ngModel)]="newMember" placeholder="Add Member" class="ItemInput" />
+    <button (click)="addMember()">Add</button>
   </div>
   <ul>
     <li *ngFor="let member of members; let ind = index ">
       {{member}}
-      <span (click) = "removeMembers(ind)">x</span>
+      <span (click)="removeMembers(ind)">x</span>
     </li>
 
   </ul>

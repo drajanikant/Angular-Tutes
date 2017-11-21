@@ -1,0 +1,18 @@
+<form class="container" #userFrom = "ngForm" (ngSubmit) = "onSubmit(userFrom.value)" >
+  <input type="text" name="firstname" placeholder="First Name" ngModel>
+  <br>
+  <input type="text" name="lastname" placeholder="Last Name" ngModel>
+  <br>
+  <select name="languages" ngModel>
+    <option value="C++">C++</option>
+    <option value="JAVA">JAVA</option>
+    <option value="Python">Python</option>
+  </select>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<p *ngIf="user.firstname != '' ">
+user name : {{user.firstname}} {{user.lastname}}<br>
+languages : {{user.languages}}<br>
+</p>

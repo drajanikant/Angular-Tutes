@@ -7,8 +7,12 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule, Response } from '@angular/http';
 import { SortPipe } from './sort.pipe';
 import { SortDemoComponent } from './sort-demo/sort-demo.component';
+import { FormTempleteComponent } from './form-templete/form-templete.component';
+import { ModelFormComponent } from './model-form/model-form.component';
+import { BaseConverterComponent } from './base-converter/base-converter.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,15 @@ import { SortDemoComponent } from './sort-demo/sort-demo.component';
     ProductComponent,
     MembersComponent,
     SortPipe,
-    SortDemoComponent
+    SortDemoComponent,
+    FormTempleteComponent,
+    ModelFormComponent,
+    BaseConverterComponent
   ],
   imports: [
     BrowserModule,
+   
+    HttpModule,
     RouterModule.forRoot([
       {
         path : 'members',
@@ -38,9 +47,23 @@ import { SortDemoComponent } from './sort-demo/sort-demo.component';
         path:'', // for the default component route
         component: MyComponentComponent,
         pathMatch: 'full'
+      },
+      {
+        path:'templete-form', 
+        component: FormTempleteComponent,
+      },
+      {
+        path:'model-form',
+        component: ModelFormComponent,
+      },
+      {
+        path:'base-converter',
+        component: BaseConverterComponent,
       }
       ]),
-      FormsModule
+      ReactiveFormsModule,
+      FormsModule,
+      HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
